@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="form-echo.php" method="get">
+            <p><label>USERNAME :
+            <input
+                pattern="[A-Z]*"
+                type="text"
+                name="username"
+                placeholder="Username"></label>
+            <p><label>STUDENT ID :
+            <input
+                pattern="[1-9]\d(-)\d{6,6}(-)\d{4,4}(-)\d"
+                type="text"
+                name="id"
+                placeholder="63-123456-1234-5"></label>
+            <p><label>House No. :
+            <input
+                pattern="[\d]+(/|\d)[\d]+"
+                type="text"
+                name="housenumber"
+                placeholder="Number"></label>
+            <p><label>รหัสสินค้า :
+            <input
+                pattern="[A-Z]{3,3}\d{2,2}"
+                type="text"
+                name="productcode"
+                placeholder="Code"></label>
+            <p><label>ชื่อภาษาไทย :
+            <input
+                pattern="^[ก-๏\s]+$"
+                type="text"
+                name="thainame"
+                placeholder="ชื่อ"></label>
+            </p>
+            <input type="submit" value="Submit">
+        </form><br>
+    </body>
+</html>
